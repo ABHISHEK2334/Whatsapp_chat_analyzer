@@ -45,21 +45,12 @@ page_bg_img = f"""
 """
 
 # Google Analytics script
-ga_script = """
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-V9B5RTGQGM"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-V9B5RTGQGM');
-</script>
-"""
+
 
 # Embed Google Analytics script
 st.markdown(f"""
     {page_bg_img}
-    {ga_script}
+   
 """, unsafe_allow_html=True)
 
 st.markdown("""
